@@ -3,88 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estonia Media Evolution</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Europe Tour</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-image: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .images-grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        footer {
+            background-color: #000;
+            color: #e2e2e2;
+            text-align: center;
+            padding: 20px 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="hero" style="background-image: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg');">
-            <div class="overlay">
-                <h1>Estonia’s Media Transformation</h1>
-                <h2>From Soviet Control to Digital Leadership</h2>
-                <a href="#section1" class="button">Discover More</a>
-            </div>
-        </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="section1">
-        <div class="container">
-            <h2>About the Transformation</h2>
-            <p>Estonia’s journey from Soviet censorship to a beacon of media freedom exemplifies resilience and innovation. After gaining independence in 1991, Estonia embraced democratic institutions, fostering an environment of press freedom and digital innovation.</p>
-        </div>
-    </section>
+<!-- Header Section -->
+<div class="header">
+    <div>
+        <h1>Estonia's Media Transformation</h1>
+        <p>From Soviet Control to Digital Leadership</p>
+    </div>
+</div>
 
-    <!-- Transition Section with Flags -->
-    <section class="transition-section">
-        <div class="flags">
-            <img src="file-SmNpXv5wxvqHYgMg5eC5uU" alt="Estonian Soviet Flag">
-            <img src="file-WvYVmbXm8ts7W4hxxAcM27" alt="Modern Estonian Flag">
-        </div>
-    </section>
+<!-- Content Section -->
+<div class="content">
+    <h2>Introduction</h2>
+    <p>Estonia's journey from a controlled communist regime to a thriving democracy epitomizes resilience and innovation. Emerging from Soviet rule in 1991, the nation has redefined itself as a pioneer in digital governance and media freedom.</p>
 
-    <!-- Key Statistics Section -->
-    <section id="statistics">
-        <div class="container">
-            <h2>Key Statistics</h2>
-            <div class="stats">
-                <div class="stat">
-                    <h3>Capital</h3>
-                    <p>Tallinn</p>
-                </div>
-                <div class="stat">
-                    <h3>Population</h3>
-                    <p>1.3 million</p>
-                </div>
-                <div class="stat">
-                    <h3>Language</h3>
-                    <p>Estonian</p>
-                </div>
-                <div class="stat">
-                    <h3>Area</h3>
-                    <p>45,339 km²</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Images Grid -->
+    <div class="images-grid">
+        <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn">
+        <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Estonian Factory">
+        <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Historic Estonia">
+        <img src="https://static.tildacdn.info/tild6530-6335-4235-b237-373434626330/statue.png" alt="Statue">
+    </div>
 
-    <!-- Media Under Soviet Rule Section -->
-    <section id="soviet-media">
-        <div class="container">
-            <h2>Media Under Soviet Rule</h2>
-            <p>During the Soviet era, Estonia’s media was strictly controlled by communist authorities. Outlets such as Rahva Hääl (People’s Voice) and Noorte Hääl (Youth Voice) acted as propaganda tools for the Communist Party.</p>
-            <img src="https://static.tildacdn.info/tild3531-6364-4961-b536-313863393232/ezgif-3-01f89cf1b8.gif" alt="Soviet Media Image">
-        </div>
-    </section>
+    <h2>Media Under Soviet Rule</h2>
+    <p>During the Soviet era, Estonia’s media was strictly controlled by communist authorities. Outlets acted as propaganda tools, suppressing independent journalism. However, journalists participated in oppositional cultural resistance, paving the way for the role in Estonia’s national liberation movements starting in 1988.</p>
 
-    <!-- Current Media Landscape Section -->
-    <section id="current-media">
-        <div class="container">
-            <h2>Current Media Landscape</h2>
-            <p>Today, Estonia is a leader in digital governance and media freedom. Major outlets include Postimees, Eesti Päevaleht, ERR, and Delfi. Estonia ranks 6th in the World Press Freedom Index.</p>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+    <!-- Video Section -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" title="Estonian Media"></iframe>
+    </div>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Estonia Media History. All Rights Reserved.</p>
-        </div>
-    </footer>
+<!-- Footer Section -->
+<footer>
+    <p>All text, photos, graphics, and videos belong to their owners and are for demonstration purposes only.</p>
+    <p>&copy; 2025 Estonia Media History</p>
+</footer>
 
 </body>
 </html>
