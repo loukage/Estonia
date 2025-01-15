@@ -4,50 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estonia's Media Transformation</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            text-align: center;
-            background: url('https://cdn.pixabay.com/photo/2018/09/10/11/02/estonia-3737128_1280.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        header {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0.5em 0;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 0.5em 0;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.5em 1.5em;
-            font-size: 1.2em;
-            color: #fff;
-            background: #d90429;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .button:hover {
-            background: #9b021f;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Estonia's Media Transformation</h1>
-        <p>From Soviet Control to Digital Leadership</p>
-        <a href="#" class="button">Open</a>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Estonia's Media Transformation</h1>
+            <p>From Soviet Control to Digital Leadership</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
     </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the Transformation</h2>
+            <p>Explore the journey of Estonia's media landscape from control to independence and digital leadership. The evolution of the media industry reflects the country's innovative spirit and its commitment to transparency and democracy.</p>
+        </div>
+    </section>
+
+    <section id="history" class="section">
+        <div class="container">
+            <h2>Media History</h2>
+            <p>The history of media in Estonia showcases a rich tapestry of challenges and achievements. From Soviet censorship to the vibrant, independent media of today, the journey is nothing short of remarkable.</p>
+            <img src="images/history.jpg" alt="Media History in Estonia">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Estonia Media Transformation. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
