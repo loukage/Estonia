@@ -6,10 +6,11 @@
     <title>Estonia's Media Transformation</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" data-aos="fade-in">
         <div class="overlay">
             <h1>Estonia's Media Transformation</h1>
             <p>From Soviet Control to Digital Leadership</p>
@@ -18,33 +19,33 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" data-aos="fade-up">
         <div class="container">
             <div class="text-content">
                 <h2>About the Transformation</h2>
                 <p>Estonia’s journey from a controlled communist regime to a thriving democracy epitomizes resilience and innovation. Emerging from Soviet rule in 1991, the nation has redefined itself as a pioneer in digital governance and media freedom, setting an example for other transitioning democracies.</p>
             </div>
             <div class="image-content">
-                <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn City">
+                <img src="images/tallinn.jpg" alt="Tallinn City">
             </div>
         </div>
     </section>
 
     <!-- History Section -->
-    <section id="history" class="section dark">
+    <section id="history" class="section dark" data-aos="fade-up">
         <div class="container">
             <div class="text-content">
                 <h2>Media History</h2>
                 <p>The history of media in Estonia showcases a rich tapestry of challenges and achievements. From Soviet censorship to the vibrant, independent media of today, the journey is nothing short of remarkable.</p>
             </div>
             <div class="image-content">
-                <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Historical Media">
+                <img src="images/media-history.jpg" alt="Historical Media">
             </div>
         </div>
     </section>
 
     <!-- Soviet Media Section -->
-    <section id="soviet-media" class="section">
+    <section id="soviet-media" class="section" data-aos="fade-up">
         <div class="container">
             <h2>Media Under Soviet Rule</h2>
             <div class="content-row">
@@ -52,14 +53,14 @@
                     <p>During the Soviet era, Estonia’s media was strictly controlled by communist authorities. Outlets such as <strong>Rahva Hääl</strong> (People’s Voice) and <strong>Noorte Hääl</strong> (Youth Voice) acted as propaganda tools for the Communist Party, suppressing independent journalism.</p>
                 </div>
                 <div class="image-content">
-                    <img src="https://static.tildacdn.info/tild3531-6364-4961-b536-313863393232/ezgif-3-01f89cf1b8.gif" alt="Soviet Media">
+                    <img src="images/soviet-media.gif" alt="Soviet Media">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Current Media Section -->
-    <section id="current-media" class="section dark">
+    <section id="current-media" class="section dark" data-aos="fade-up">
         <div class="container">
             <h2>Current Media Landscape</h2>
             <div class="content-row">
@@ -74,10 +75,16 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer data-aos="fade-in">
         <div class="footer-container">
             <p>&copy; 2025 Estonia Media Transformation. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
