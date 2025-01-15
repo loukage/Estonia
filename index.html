@@ -3,154 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Europe Tour</title>
-    <style>
-        /* Styles généraux */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        .header {
-            background-image: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg');
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 3em;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .images-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        .images-grid img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .video-container {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .video-container iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border: none;
-        }
-
-        footer {
-            background-color: #000;
-            color: #e2e2e2;
-            text-align: center;
-            padding: 20px 10px;
-        }
-    </style>
+    <title>Estonian Media History</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Estonian Media History</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- Header Section -->
-<div class="header">
-    <div>
-        <h1>Estonia's Media Transformation</h1>
-        <p>From Soviet Control to Digital Leadership</p>
-    </div>
-</div>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>Welcome to the Estonian Media History project. Here, we explore the evolution of media in Estonia, its cultural impact, and historical significance.</p>
+            </div>
+        </section>
 
-<!-- Content Section -->
-<div class="content">
-    <h2>Introduction</h2>
-    <p>Estonia's journey from a controlled communist regime to a thriving democracy epitomizes resilience and innovation. Emerging from Soviet rule in 1991, the nation has redefined itself as a pioneer in digital governance and media freedom.</p>
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2>Timeline</h2>
+                <p>Discover key milestones in Estonian media history.</p>
+                <ul>
+                    <li>1900: The first newspaper in Estonian was published.</li>
+                    <li>1920: Radio broadcasting began in Estonia.</li>
+                    <li>1990: Digital media emerged as a new force.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Images Grid -->
-    <div class="images-grid">
-        <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn">
-        <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Estonian Factory">
-        <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Historic Estonia">
-        <img src="https://static.tildacdn.info/tild6530-6335-4235-b237-373434626330/statue.png" alt="Statue">
-    </div>
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>Resources</h2>
+                <p>Access articles, books, and other resources related to Estonian media history.</p>
+                <a href="https://example.com/resources" class="btn">Explore Resources</a>
+            </div>
+        </section>
 
-    <div class="flag-transition">
-    <img src="estonian-soviet-socialist-republic-flag-map-isolated-on-white-background-free-vector.jpg" alt="Soviet Flag" class="flag soviet-flag">
-    <img src="4266780-mapa-da-estonia-com-bandeira-gratis-vetor.jpg" alt="Estonian Flag" class="flag estonian-flag">
-</div>
-.flag-transition {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Ajustez la hauteur si nécessaire */
-    overflow: hidden;
-}
+        <section id="video" class="section">
+            <div class="container">
+                <h2>Featured Video</h2>
+                <p>Click the button below to watch a featured video about Estonian media history.</p>
+                <a href="https://youtu.be/pm3yzSN8aVk?si=6_3NF85cvW23I4bv" target="_blank" class="btn">Watch Video</a>
+            </div>
+        </section>
+    </main>
 
-.flag {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-}
-
-.soviet-flag {
-    animation: fadeOut 4s ease-in-out forwards;
-}
-
-.estonian-flag {
-    animation: fadeIn 4s ease-in-out forwards;
-    animation-delay: 4s;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-    <h2>Media Under Soviet Rule</h2>
-    <p>During the Soviet era, Estonia’s media was strictly controlled by communist authorities. Outlets acted as propaganda tools, suppressing independent journalism. However, journalists participated in oppositional cultural resistance, paving the way for the role in Estonia’s national liberation movements starting in 1988.</p>
-
-    <!-- Video Section -->
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" title="Estonian Media"></iframe>
-    </div>
-</div>
-
-<!-- Footer Section -->
-<footer>
-    <p>All text, photos, graphics, and videos belong to their owners and are for demonstration purposes only.</p>
-    <p>&copy; 2025 Estonia Media History</p>
-</footer>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Estonian Media History. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
