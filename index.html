@@ -3,120 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estonia's Media Transformation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Estonian Media Transformation</title>
     <style>
+        /* Style général */
         body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
-            color: #333;
         }
+
         header {
-            height: 100vh;
-            background: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg') no-repeat center center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background-color: #b81a1a;
             color: #fff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         header h1 {
             font-size: 3em;
             margin: 0;
         }
-        header p {
-            font-size: 1.2em;
-            margin: 0.5em 0;
-        }
-        header .cta-button {
-            margin-top: 1em;
-            padding: 0.7em 2em;
-            background-color: #b81a1a;
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            font-size: 1em;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        header .cta-button:hover {
-            background-color: #9b1515;
-        }
-        .section {
-            padding: 3em 1em;
+
+        .content {
+            padding: 20px;
             text-align: center;
         }
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 1em;
+
+        .flag-transition {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            overflow: hidden;
         }
-        .section p {
-            max-width: 800px;
-            margin: 0 auto 2em;
-            line-height: 1.6;
-        }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1em;
-            padding: 0 1em;
-        }
-        .image-grid img {
+
+        .flag {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            border-radius: 8px;
+            height: 100%;
+            transition: opacity 2s ease-in-out;
         }
+
+        .soviet-flag {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .estonia-flag {
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .flag-transition:hover .soviet-flag {
+            opacity: 0;
+        }
+
+        .flag-transition:hover .estonia-flag {
+            opacity: 1;
+        }
+
         .video-section {
-            padding: 2em;
-            background-color: #fff;
-        }
-        .video-section iframe {
-            width: 100%;
+            margin: 50px auto;
             max-width: 800px;
+        }
+
+        iframe {
+            width: 100%;
             height: 450px;
-            border: none;
-            border-radius: 8px;
         }
-        footer {
+
+        .footer {
             background-color: #000;
-            color: #fff;
+            color: #e2e2e2;
             text-align: center;
-            padding: 2em 1em;
+            padding: 20px;
         }
-        footer a {
-            color: #fff;
+
+        .footer a {
+            color: #b81a1a;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Estonia's Media Transformation</h1>
+        <h1>Estonian Media Transformation</h1>
         <p>From Soviet Control to Digital Leadership</p>
-        <a href="#section1" class="cta-button">Learn More</a>
     </header>
 
-    <section class="section" id="section1">
-        <h2>Media Under Soviet Rule (1940–1991)</h2>
-        <p>During the Soviet era, Estonia's media was tightly controlled by the communist regime. Despite strict censorship, some journalists managed to pave the way for Estonia's liberation through cultural resistance.</p>
-        <div class="image-grid">
-            <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn">
-            <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Factory">
-            <img src="https://static.tildacdn.info/tild6530-6335-4235-b237-373434626330/statue.png" alt="Statue">
-            <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Old Newspaper">
+    <div class="content">
+        <h2>Transition Between Flags</h2>
+        <div class="flag-transition">
+            <img src="estonian-soviet-socialist-republic-flag-map-isolated-on-white-background-free-vector.jpg" 
+                 class="flag soviet-flag" alt="Soviet Estonia Flag">
+            <img src="4266780-mapa-da-estonia-com-bandeira-gratis-vetor.jpg" 
+                 class="flag estonia-flag" alt="Estonia Flag">
         </div>
-    </section>
 
-    <section class="video-section">
-        <h2>Current Media Landscape</h2>
-        <p>Estonia's media today exemplifies innovation and press freedom, ranking sixth in the 2024 World Press Freedom Index. Public broadcasters like ERR and digital platforms like Delfi lead the way.</p>
-        <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" allowfullscreen></iframe>
-    </section>
+        <h2>Watch the Evolution</h2>
+        <div class="video-section">
+            <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-    <footer>
-        <p>Created by Your Name. Images and content for demonstration purposes only. <a href="#">Privacy Policy</a></p>
+    <footer class="footer">
+        <p>&copy; 2025 Estonian Media Transformation. All rights reserved.</p>
+        <p>Created by <a href="#">Your Name</a></p>
     </footer>
 </body>
 </html>
