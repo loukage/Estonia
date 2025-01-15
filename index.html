@@ -3,65 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estonian Media History</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Europe Tour</title>
+    <!-- Font and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            height: 100vh;
+            background: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #b81a1a;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 40px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #a01414;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .video iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Estonian Media History</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#timeline">Timeline</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                </ul>
-            </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-overlay">
+            <h1>Estonia’s Media Transformation</h1>
+            <h2>From Soviet Control to Digital Leadership</h2>
+            <button class="btn">Learn More</button>
         </div>
     </header>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About</h2>
-                <p>Welcome to the Estonian Media History project. Here, we explore the evolution of media in Estonia, its cultural impact, and historical significance.</p>
-            </div>
-        </section>
-
-        <section id="timeline" class="section">
-            <div class="container">
-                <h2>Timeline</h2>
-                <p>Discover key milestones in Estonian media history.</p>
-                <ul>
-                    <li>1900: The first newspaper in Estonian was published.</li>
-                    <li>1920: Radio broadcasting began in Estonia.</li>
-                    <li>1990: Digital media emerged as a new force.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="resources" class="section">
-            <div class="container">
-                <h2>Resources</h2>
-                <p>Access articles, books, and other resources related to Estonian media history.</p>
-                <a href="https://example.com/resources" class="btn">Explore Resources</a>
-            </div>
-        </section>
-
-        <section id="video" class="section">
-            <div class="container">
-                <h2>Featured Video</h2>
-                <p>Click the button below to watch a featured video about Estonian media history.</p>
-                <a href="https://youtu.be/pm3yzSN8aVk?si=6_3NF85cvW23I4bv" target="_blank" class="btn">Watch Video</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- About Section -->
+    <section class="section">
         <div class="container">
-            <p>&copy; 2025 Estonian Media History. All rights reserved.</p>
+            <div class="about">
+                <h3>Estonia’s Journey</h3>
+                <p>Estonia’s journey from a controlled communist regime to a thriving democracy epitomizes resilience and innovation. Emerging from Soviet rule in 1991, the nation has redefined itself as a pioneer in digital governance and media freedom, setting an example for other transitioning democracies.</p>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <h3>Gallery</h3>
+            <div class="gallery">
+                <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn">
+                <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Factory">
+                <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Historic Moment">
+                <img src="https://static.tildacdn.info/tild6530-6335-4235-b237-373434626330/statue.png" alt="Statue">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section">
+        <div class="container">
+            <h3>Current Media Landscape</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
 
