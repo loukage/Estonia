@@ -8,86 +8,86 @@
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
-            background-image: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg');
-            background-size: cover;
-            background-position: center;
             height: 100vh;
-            color: white;
+            background: url('https://static.tildacdn.info/tild3866-3564-4363-a534-383761366634/tallin-889901_1280.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         header h1 {
-            font-size: 3rem;
+            font-size: 3em;
             margin: 0;
         }
         header p {
-            font-size: 1.5rem;
-            margin: 1rem 0;
+            font-size: 1.2em;
+            margin: 0.5em 0;
         }
-        header a {
-            display: inline-block;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
+        header .cta-button {
+            margin-top: 1em;
+            padding: 0.7em 2em;
             background-color: #b81a1a;
-            color: white;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
         }
-        header a:hover {
-            background-color: #8c1313;
+        header .cta-button:hover {
+            background-color: #9b1515;
         }
-
-        section {
-            padding: 3rem;
-        }
-        .text-section {
-            background-color: #f0f0f0;
+        .section {
+            padding: 3em 1em;
             text-align: center;
-            padding: 2rem;
         }
-        .gallery {
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        .section p {
+            max-width: 800px;
+            margin: 0 auto 2em;
+            line-height: 1.6;
+        }
+        .image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            padding: 0 1em;
         }
-        .gallery img {
+        .image-grid img {
             width: 100%;
-            height: auto;
-            border-radius: 5px;
+            border-radius: 8px;
         }
-
         .video-section {
-            text-align: center;
-            padding: 2rem;
+            padding: 2em;
+            background-color: #fff;
         }
         .video-section iframe {
-            width: 80%;
-            height: 400px;
-            max-width: 900px;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
         }
-
         footer {
             background-color: #000;
-            color: #e2e2e2;
+            color: #fff;
             text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
+            padding: 2em 1em;
         }
         footer a {
-            color: #b81a1a;
+            color: #fff;
             text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -95,36 +95,28 @@
     <header>
         <h1>Estonia's Media Transformation</h1>
         <p>From Soviet Control to Digital Leadership</p>
-        <a href="#gallery">Explore</a>
+        <a href="#section1" class="cta-button">Learn More</a>
     </header>
 
-    <section class="text-section">
-        <h2>Media Under Soviet Rule</h2>
-        <p>
-            During the Soviet era, Estonia’s media was strictly controlled by communist authorities. Outlets such as <strong>Rahva Hääl</strong>
-            (People’s Voice) and <strong>Noorte Hääl</strong> (Youth Voice) acted as propaganda tools for the Communist Party, suppressing independent journalism.
-        </p>
-    </section>
-
-    <section id="gallery">
-        <h2 style="text-align:center">Gallery</h2>
-        <div class="gallery">
+    <section class="section" id="section1">
+        <h2>Media Under Soviet Rule (1940–1991)</h2>
+        <p>During the Soviet era, Estonia's media was tightly controlled by the communist regime. Despite strict censorship, some journalists managed to pave the way for Estonia's liberation through cultural resistance.</p>
+        <div class="image-grid">
             <img src="https://static.tildacdn.info/tild3831-6435-4536-b035-646639346464/tallinn-3621296_1280.jpg" alt="Tallinn">
-            <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Estonian Factory">
+            <img src="https://static.tildacdn.info/tild6131-3432-4865-a661-656430663436/usine_estonie.png" alt="Factory">
             <img src="https://static.tildacdn.info/tild6530-6335-4235-b237-373434626330/statue.png" alt="Statue">
-            <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Old Estonia">
+            <img src="https://static.tildacdn.info/tild3866-6237-4531-a632-363063656430/60545B0B-FF41-46B6-9.jpg" alt="Old Newspaper">
         </div>
     </section>
 
     <section class="video-section">
-        <h2>Video</h2>
-        <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" frameborder="0" allowfullscreen></iframe>
+        <h2>Current Media Landscape</h2>
+        <p>Estonia's media today exemplifies innovation and press freedom, ranking sixth in the 2024 World Press Freedom Index. Public broadcasters like ERR and digital platforms like Delfi lead the way.</p>
+        <iframe src="https://www.youtube.com/embed/pm3yzSN8aVk" allowfullscreen></iframe>
     </section>
 
     <footer>
-        <p>Icon credits: Icons from <a href="https://thenounproject.com" target="_blank">Noun Project</a></p>
-        <p>Photo credits: National Archives of Estonia, Pixabay, Unsplash</p>
-        <p>&copy; 2025 Your Website</p>
+        <p>Created by Your Name. Images and content for demonstration purposes only. <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
